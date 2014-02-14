@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".InstanceActivity" >
+
+    <TextView
+        android:id="@+id/InstanceDetailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textColor="#FF0000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/InstanceDetailID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/InstanceDetailCreated"
+        android:layout_below="@+id/InstanceDetailName"
+        android:text="ID" />
+
+    <TextView
+        android:id="@+id/InstanceDetailActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/InstanceDetailCreated"
+        android:layout_below="@+id/InstanceDetailID"
+        android:text="active" />
+
+    <TextView
+        android:id="@+id/InstanceDetailCreated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/InstanceDetailCreated"
+        android:layout_below="@+id/InstanceDetailActive"
+        android:text="created" />
+
+    <TextView
+        android:id="@+id/InstanceDetailStaticSpecs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/InstanceDetailCreated"
+        android:layout_below="@+id/InstanceDetailCreated"
+        android:layout_marginTop="14dp"
+        android:text="Specs"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/InstanceDetailSpecsFlavor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/InstanceDetailCreated"
+        android:layout_below="@+id/InstanceDetailStaticSpecs"
+        android:text="specs1" />
+
+    <TextView
+        android:id="@+id/InstanceDetailSpecsDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/InstanceDetailCreated"
+        android:layout_below="@+id/InstanceDetailSpecsFlavor"
+        android:text="specs1" />
+
+    
+    <TextView
+        android:id="@+id/InstanceDetailStaticOperations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/InstanceDetailCreated"
+        android:layout_below="@+id/InstanceDetailSpecsDetail"
+        android:layout_marginTop="14dp"
+        android:text="Operations"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonInstanceStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/InstanceDetailStaticOperations"
+        android:layout_centerVertical="true"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/buttonInstanceStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/buttonInstanceStart"
+        android:text="Stop" />
+    
+</RelativeLayout>

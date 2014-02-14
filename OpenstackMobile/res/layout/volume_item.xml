@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/VolumeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textColor="#FF0000" />
+
+    <TextView
+        android:id="@+id/VolumeID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID" />    
+        
+    <TextView
+        android:id="@+id/VolumeDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description" />    
+
+    <TextView
+        android:id="@+id/VolumeSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Size" />     
+    
+    <TextView
+        android:id="@+id/VolumeStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="active" />
+    
+        <TextView
+        android:id="@+id/VolumeCreated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="created" />
+
+</LinearLayout>
